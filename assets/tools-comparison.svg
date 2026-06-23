@@ -1,0 +1,25 @@
+<svg width="900" height="720" viewBox="0 0 900 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="720" rx="44" fill="#FFF8EE"/>
+  <rect x="90" y="116" width="320" height="470" rx="34" fill="#FFF1E5"/>
+  <rect x="490" y="116" width="320" height="470" rx="34" fill="#EDF5FF"/>
+  <rect x="397" y="278" width="106" height="142" rx="28" fill="#17212B"/>
+  <path d="M447 310L470 354L447 398L424 354L447 310Z" fill="#F4B04B"/>
+  <text x="250" y="190" fill="#17212B" font-family="Cairo, Arial" font-size="34" font-weight="800" text-anchor="middle">ChatGPT</text>
+  <text x="650" y="190" fill="#17212B" font-family="Cairo, Arial" font-size="34" font-weight="800" text-anchor="middle">Claude</text>
+  <rect x="132" y="228" width="236" height="72" rx="22" fill="#FFFFFF"/>
+  <rect x="132" y="320" width="236" height="72" rx="22" fill="#FFFFFF"/>
+  <rect x="132" y="412" width="236" height="72" rx="22" fill="#FFFFFF"/>
+  <rect x="532" y="228" width="236" height="72" rx="22" fill="#FFFFFF"/>
+  <rect x="532" y="320" width="236" height="72" rx="22" fill="#FFFFFF"/>
+  <rect x="532" y="412" width="236" height="72" rx="22" fill="#FFFFFF"/>
+  <text x="250" y="272" fill="#F06C3C" font-family="Cairo, Arial" font-size="24" font-weight="700" text-anchor="middle">إبداع أعلى</text>
+  <text x="250" y="364" fill="#F06C3C" font-family="Cairo, Arial" font-size="24" font-weight="700" text-anchor="middle">أسلوب طبيعي</text>
+  <text x="250" y="456" fill="#F06C3C" font-family="Cairo, Arial" font-size="24" font-weight="700" text-anchor="middle">تنوع في المهام</text>
+  <text x="650" y="272" fill="#2056C9" font-family="Cairo, Arial" font-size="24" font-weight="700" text-anchor="middle">قوة برمجية</text>
+  <text x="650" y="364" fill="#2056C9" font-family="Cairo, Arial" font-size="24" font-weight="700" text-anchor="middle">تحليل وثائق</text>
+  <text x="650" y="456" fill="#2056C9" font-family="Cairo, Arial" font-size="24" font-weight="700" text-anchor="middle">أسلوب تقني</text>
+  <path d="M250 538C307.99 538 355 491.66 355 434.5" stroke="#F06C3C" stroke-width="12" stroke-linecap="round"/>
+  <path d="M650 538C592.01 538 545 491.66 545 434.5" stroke="#2056C9" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="250" cy="538" r="18" fill="#F06C3C"/>
+  <circle cx="650" cy="538" r="18" fill="#2056C9"/>
+</svg>
