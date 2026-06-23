@@ -1,0 +1,27 @@
+<svg width="900" height="720" viewBox="0 0 900 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="720" rx="44" fill="#FFF8EE"/>
+  <rect x="100" y="88" width="700" height="544" rx="38" fill="#17212B"/>
+  <circle cx="450" cy="360" r="108" fill="#F4B04B"/>
+  <circle cx="450" cy="360" r="70" fill="#FFF8EE"/>
+  <rect x="399" y="329" width="102" height="62" rx="20" fill="#0E8F8F"/>
+  <rect x="166" y="154" width="170" height="84" rx="26" fill="#FFF8EE"/>
+  <rect x="564" y="154" width="170" height="84" rx="26" fill="#FFF8EE"/>
+  <rect x="166" y="482" width="170" height="84" rx="26" fill="#FFF8EE"/>
+  <rect x="564" y="482" width="170" height="84" rx="26" fill="#FFF8EE"/>
+  <rect x="128" y="309" width="170" height="84" rx="26" fill="#FFF8EE"/>
+  <rect x="602" y="309" width="170" height="84" rx="26" fill="#FFF8EE"/>
+  <path d="M450 252L450 228" stroke="#F4B04B" stroke-width="14" stroke-linecap="round"/>
+  <path d="M450 492L450 468" stroke="#F4B04B" stroke-width="14" stroke-linecap="round"/>
+  <path d="M342 360H318" stroke="#F4B04B" stroke-width="14" stroke-linecap="round"/>
+  <path d="M582 360H558" stroke="#F4B04B" stroke-width="14" stroke-linecap="round"/>
+  <path d="M379 284L339 246" stroke="#F4B04B" stroke-width="14" stroke-linecap="round"/>
+  <path d="M521 437L561 474" stroke="#F4B04B" stroke-width="14" stroke-linecap="round"/>
+  <text x="251" y="204" fill="#17212B" font-family="Cairo, Arial" font-size="28" font-weight="700" text-anchor="middle">الدور</text>
+  <text x="649" y="204" fill="#17212B" font-family="Cairo, Arial" font-size="28" font-weight="700" text-anchor="middle">الهدف</text>
+  <text x="251" y="360" fill="#17212B" font-family="Cairo, Arial" font-size="28" font-weight="700" text-anchor="middle">الجمهور</text>
+  <text x="687" y="360" fill="#17212B" font-family="Cairo, Arial" font-size="28" font-weight="700" text-anchor="middle">السياق</text>
+  <text x="251" y="533" fill="#17212B" font-family="Cairo, Arial" font-size="28" font-weight="700" text-anchor="middle">الصيغة</text>
+  <text x="649" y="533" fill="#17212B" font-family="Cairo, Arial" font-size="28" font-weight="700" text-anchor="middle">القواعد</text>
+  <text x="450" y="352" fill="#17212B" font-family="Cairo, Arial" font-size="28" font-weight="800" text-anchor="middle">مطالبة</text>
+  <text x="450" y="390" fill="#17212B" font-family="Cairo, Arial" font-size="28" font-weight="800" text-anchor="middle">احترافية</text>
+</svg>
