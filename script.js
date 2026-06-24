@@ -1,33 +1,30 @@
-const reveals = document.querySelectorAll(".reveal");
-const backToTop = document.querySelector(".back-to-top");
+const searchInput = document.getElementById("toolSearch");
+const cards = Array.from(document.querySelectorAll(".tool-card"));
+const resultsCount = document.getElementById("resultsCount");
 
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  {
-    threshold: 0.16,
-  }
-);
+function updateResults(query) {
+  const normalized = query.trim().toLowerCase();
+  let visibleCount = 0;
 
-reveals.forEach((item) => revealObserver.observe(item));
+  cards.forEach((card) => {
+    const name = (card.dataset.name || "").toLowerCase();
+    const tags = (card.dataset.tags || "").toLowerCase();
+    const content = card.textContent.toLowerCase();
+    const matches =
+      normalized === "" ||
+      name.includes(normalized) ||
+      tags.includes(normalized) ||
+      content.includes(normalized);
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 480) {
-    backToTop.classList.add("show");
-  } else {
-    backToTop.classList.remove("show");
-  }
-});
-
-backToTop.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
+    card.classList.toggle("is-hidden", !matches);
+    if (matches) visibleCount += 1;
   });
+
+  resultsCount.textContent = `${visibleCount} أدوات ظاهرة`;
+}
+
+searchInput.addEventListener("input", (event) => {
+  updateResults(event.target.value);
 });
+
+updateResults("");
