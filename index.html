@@ -1,358 +1,325 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>مقارنة أدوات الذكاء الاصطناعي</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="page-shell">
-    <header class="hero">
-      <nav class="topbar">
-        <div class="brand">AI Tools Hub</div>
-        <a class="doc-note" href="#document-summary">محتوى الملف المرفق</a>
-      </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مراجعة الجلسة | أدوات الذكاء الاصطناعي وهندسة المطالبات</title>
+    <meta
+      name="description"
+      content="صفحة عربية تعليمية تشرح أهم أدوات الذكاء الاصطناعي الحالية، مقارنة بين ChatGPT وClaude، وأساسيات هندسة المطالبات."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#hero">
+          <span class="brand-mark">AI</span>
+          <span>مراجعة الجلسة</span>
+        </a>
+        <nav class="topnav">
+          <a href="#overview">نظرة عامة</a>
+          <a href="#prompt">هندسة المطالبات</a>
+          <a href="#comparison">المقارنة</a>
+          <a href="#takeaways">الخلاصة</a>
+        </nav>
+      </header>
 
-      <div class="hero-grid">
-        <section class="hero-copy">
-          <p class="eyebrow">دليل سريع وواضح</p>
-          <h1>موقع مقارن لأدوات الذكاء الاصطناعي المختلفة</h1>
-          <p class="lead">
-            هذا الموقع مبني اعتماداً على الملف المرفق <strong>"مقارنة بين ادوات الذكاء الاصطناعي المختلفة"</strong>،
-            ويعرض أهم الأدوات المذكورة فيه مع نقاط القوة والضعف وأفضل الاستخدامات لكل أداة.
-          </p>
-
-          <div class="hero-actions">
-            <a class="button primary" href="#tools">استعرض الأدوات</a>
-            <a class="button secondary" href="#comparison">شاهد المقارنة</a>
+      <main>
+        <section class="hero section" id="hero">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">جلسة تدريبية مبسطة ومركزة</p>
+            <h1>كيف تختار أداة الذكاء الاصطناعي المناسبة وتكتب مطالبة احترافية؟</h1>
+            <p class="hero-text">
+              هذه الصفحة تحوّل ملخص الجلسة إلى تجربة مرئية عربية تجمع بين
+              الشرح السريع، المراجعة العملية، والرسومات التوضيحية حتى يصبح
+              الفهم أسهل والتذكر أقوى.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#overview">ابدأ المراجعة</a>
+              <a class="button secondary" href="#comparison">شاهد المقارنة</a>
+            </div>
+            <ul class="quick-stats">
+              <li>
+                <strong>2</strong>
+                <span>أداتان رئيسيتان</span>
+              </li>
+              <li>
+                <strong>6</strong>
+                <span>عناصر للمطالبة الاحترافية</span>
+              </li>
+              <li>
+                <strong>1</strong>
+                <span>قاعدة ذهبية: جرّب وعدّل</span>
+              </li>
+            </ul>
           </div>
-
-          <div class="mini-stats">
-            <article>
-              <strong>9</strong>
-              <span>أدوات مذكورة</span>
-            </article>
-            <article>
-              <strong>بحث مباشر</strong>
-              <span>حسب الاسم أو الاستخدام</span>
-            </article>
-            <article>
-              <strong>ملخّص جاهز</strong>
-              <span>مأخوذ من المستند</span>
-            </article>
+          <div class="hero-visual reveal">
+            <img src="assets/hero-ai.svg" alt="رسم توضيحي لأدوات الذكاء الاصطناعي" />
           </div>
         </section>
 
-        <aside class="hero-panel">
-          <div class="panel-card">
-            <p class="panel-label">أفضل توصيات الملف</p>
-            <ul>
-              <li><strong>ChatGPT</strong> الأفضل كحل شامل</li>
-              <li><strong>Claude</strong> مميز للكتابة والوثائق الطويلة</li>
-              <li><strong>Perplexity</strong> الأقوى في البحث والمراجع</li>
-              <li><strong>Gemini</strong> مناسب لمن يعمل داخل Google Workspace</li>
+        <section class="overview-grid section" id="overview">
+          <article class="panel intro-card reveal">
+            <p class="section-tag">#1 ملخص الجلسة</p>
+            <h2>الفكرة الأساسية</h2>
+            <p>
+              عالم الذكاء الاصطناعي مليء بالأدوات، لكن التميز الحقيقي لا يأتي من
+              معرفة اسم الأداة فقط، بل من معرفة المهمة المناسبة لها، ثم كتابة
+              مطالبة تصف المطلوب بوضوح وذكاء.
+            </p>
+          </article>
+
+          <article class="panel reveal">
+            <h3>واقع الأدوات اليوم</h3>
+            <ul class="check-list">
+              <li>السوق مزدحم بخيارات كثيرة ومتغيرة.</li>
+              <li>لا توجد أداة تتفوق في كل شيء.</li>
+              <li>الاستخدام الذكي يعني توزيع المهام حسب نقاط القوة.</li>
+            </ul>
+          </article>
+
+          <article class="panel highlight reveal">
+            <h3>قاعدة مهمة</h3>
+            <p>
+              لا تبحث عن الأداة الأفضل بشكل مطلق، بل عن الأداة الأنسب للسياق،
+              الوقت، ونوع الناتج الذي تحتاجه.
+            </p>
+          </article>
+        </section>
+
+        <section class="section split-section" id="chatgpt">
+          <div class="section-copy reveal">
+            <p class="section-tag">ChatGPT</p>
+            <h2>الأداة الأكثر توازنًا للاستخدامات العامة</h2>
+            <p>
+              تم عرض ChatGPT كخيار مرن يجمع بين الإبداع والتحليل والكتابة
+              والبرمجة بدرجة متوازنة، لذلك يبرز عندما تكون المهمة متعددة
+              الجوانب.
+            </p>
+            <div class="pill-row">
+              <span class="pill">كتابة المحتوى</span>
+              <span class="pill">التحليل</span>
+              <span class="pill">البرمجة</span>
+              <span class="pill">إدارة المشاريع</span>
+              <span class="pill">تحسين المطالبات</span>
+            </div>
+          </div>
+          <div class="feature-card reveal">
+            <h3>أين يتألق؟</h3>
+            <ul class="check-list">
+              <li>إبداع أعلى في الصياغة وصناعة الأفكار.</li>
+              <li>أسلوب طبيعي وسلس في التواصل.</li>
+              <li>مفيد للمهام اليومية وتنظيم العمل.</li>
+              <li>ممتاز كأداة وسيطة لتحسين المطالبات قبل إرسالها لأدوات أخرى.</li>
             </ul>
           </div>
-        </aside>
-      </div>
-    </header>
+        </section>
 
-    <main>
-      <section class="search-section" id="tools">
-        <div class="section-heading">
-          <p class="eyebrow">اكتشف بسرعة</p>
-          <h2>ابحث عن الأداة المناسبة لك</h2>
-          <p>اكتب اسم الأداة أو نوع الاستخدام مثل: برمجة، بحث، كتابة، ملفات، أخبار.</p>
-        </div>
+        <section class="section prompt-section" id="prompt">
+          <div class="prompt-visual reveal">
+            <img
+              src="assets/prompt-architecture.svg"
+              alt="رسم يشرح عناصر كتابة المطالبة الاحترافية"
+            />
+          </div>
+          <div class="prompt-copy reveal">
+            <p class="section-tag">Prompt Engineering</p>
+            <h2>هندسة المطالبات: الوصفة التي تصنع فرق الجودة</h2>
+            <p>
+              كلما كانت المطالبة أوضح وأكثر تنظيمًا، اقتربت النتيجة من الصورة
+              التي يتخيلها المستخدم. هذه هي العناصر الأساسية التي تم شرحها في
+              الجلسة:
+            </p>
+            <ol class="steps">
+              <li><strong>الدور:</strong> من هو الذكاء الاصطناعي في هذه المهمة؟</li>
+              <li><strong>الهدف:</strong> ما الناتج المطلوب بدقة؟</li>
+              <li><strong>الجمهور:</strong> لمن ستُوجَّه النتيجة؟</li>
+              <li><strong>السياق:</strong> ما الخلفية أو التفاصيل الضرورية؟</li>
+              <li><strong>الصيغة:</strong> كيف تريد شكل المخرجات؟</li>
+              <li><strong>القواعد:</strong> ما الأسلوب والقيود وما يجب تجنبه؟</li>
+            </ol>
+          </div>
+        </section>
 
-        <div class="search-box">
-          <input id="toolSearch" type="search" placeholder="ابحث هنا عن الأداة أو الاستخدام المناسب...">
-          <span id="resultsCount">9 أدوات ظاهرة</span>
-        </div>
+        <section class="section panel workflow reveal">
+          <div class="workflow-header">
+            <p class="section-tag">خطوة ذكية</p>
+            <h2>استخدم ChatGPT لتحسين المطالبة أولًا</h2>
+          </div>
+          <div class="workflow-track">
+            <div class="workflow-step">
+              <span>1</span>
+              <p>اكتب فكرتك الأولية بشكل بسيط.</p>
+            </div>
+            <div class="workflow-step">
+              <span>2</span>
+              <p>اطلب من ChatGPT إعادة صياغتها كمطالبة احترافية.</p>
+            </div>
+            <div class="workflow-step">
+              <span>3</span>
+              <p>انقل النسخة المحسنة إلى أداة الصور أو الفيديو أو غيرها.</p>
+            </div>
+            <div class="workflow-step">
+              <span>4</span>
+              <p>قارن النتائج وكرر التحسين حتى تصل للجودة المطلوبة.</p>
+            </div>
+          </div>
+        </section>
 
-        <div class="cards-grid" id="toolsGrid">
-          <article class="tool-card" data-name="ChatGPT" data-tags="كتابة برمجة تحليل مشاريع محتوى ابداع بحث يومي">
-            <div class="card-top">
-              <h3>ChatGPT</h3>
-              <span class="badge best">أفضل AI شامل</span>
+        <section class="section split-section alt" id="claude">
+          <div class="feature-card reveal">
+            <h3>Claude باختصار</h3>
+            <ul class="check-list">
+              <li>قوي جدًا في كتابة الأكواد البرمجية.</li>
+              <li>ممتاز مع العقود والوثائق الطويلة والتقارير التقنية.</li>
+              <li>أكثر رسمية وتقنية في الأسلوب.</li>
+              <li>أقل إبداعًا من ChatGPT في المحتوى الإنساني.</li>
+            </ul>
+          </div>
+          <div class="section-copy reveal">
+            <p class="section-tag">Claude</p>
+            <h2>الخيار الأقوى للبرمجة وتحليل الوثائق الطويلة</h2>
+            <p>
+              عند التعامل مع ملفات تقنية كبيرة، عقود، أو مستندات تتطلب قراءة
+              منظمة، يظهر Claude كأداة متخصصة وفعالة، لكن استخدامه المكثف قد
+              يكون أعلى تكلفة نسبيًا.
+            </p>
+            <div class="note-box">
+              <strong>ملاحظة:</strong>
+              قوته التقنية لا تعني أنه الأفضل لكل مهمة؛ أحيانًا تحتاج أسلوبًا
+              أكثر إنسانية أو مرونة، وهنا يتقدم ChatGPT.
             </div>
-            <p class="summary">أفضل توازن عام بين الكتابة والبرمجة والتحليل مع أقوى نظام أدوات وتجربة استخدام قوية.</p>
-            <div class="list-block">
-              <h4>نقاط القوة</h4>
-              <ul>
-                <li>أفضل توازن بين الكتابة والبرمجة والتحليل</li>
-                <li>أقوى نظام أدوات: ملفات، صور، بحث، وكلاء AI</li>
-                <li>ممتاز للعصف الذهني والتخطيط والقدرة الإبداعية</li>
-              </ul>
+          </div>
+        </section>
+
+        <section class="section comparison-section" id="comparison">
+          <div class="comparison-copy reveal">
+            <p class="section-tag">مقارنة سريعة</p>
+            <h2>ChatGPT أم Claude؟</h2>
+            <p>
+              المقارنة هنا ليست لتحديد فائز مطلق، بل لمساعدتك على اختيار الأداة
+              حسب نوع العمل المطلوب.
+            </p>
+            <div class="comparison-table">
+              <div class="table-head">ChatGPT</div>
+              <div class="table-head">Claude</div>
+              <div>أكثر إبداعًا</div>
+              <div>أقوى في البرمجة</div>
+              <div>متوازن بين الكتابة والتحليل</div>
+              <div>ممتاز في تحليل الوثائق الطويلة</div>
+              <div>مناسب لإدارة المشاريع</div>
+              <div>مناسب للعقود والملفات التقنية</div>
+              <div>أسلوب طبيعي وسلس</div>
+              <div>أسلوب رسمي وتقني</div>
             </div>
-            <div class="list-block">
-              <h4>نقاط الضعف</h4>
-              <ul>
-                <li>أحياناً يصبح واثقاً أكثر من اللازم</li>
-                <li>ليس دائماً الأفضل في البرمجة الخالصة</li>
-                <li>البحث بالمراجع أقل دقة من Perplexity</li>
-              </ul>
-            </div>
-            <p class="use-case"><strong>استخدمه لـ:</strong> إدارة المشاريع، تحسين المطالبات، كتابة المحتوى، تحليل الأعمال، أغلب المهام اليومية.</p>
+          </div>
+          <div class="comparison-visual reveal">
+            <img
+              src="assets/tools-comparison.svg"
+              alt="رسم توضيحي للمقارنة بين ChatGPT وClaude"
+            />
+          </div>
+        </section>
+
+        <section class="section caution-grid">
+          <article class="panel caution reveal">
+            <p class="section-tag">تنبيه مهم</p>
+            <h2>الهلوسة موجودة</h2>
+            <p>
+              قد يعاني ChatGPT أحيانًا من أخطاء أو هلوسة عند تحليل ملفات كبيرة
+              جدًا، لذلك لا يُنصح بالاعتماد الكامل على النتائج في المستندات
+              الحساسة دون مراجعة بشرية.
+            </p>
           </article>
-
-          <article class="tool-card" data-name="Claude" data-tags="كتابة عقود وثائق برمجة تقارير روايات pdf">
-            <div class="card-top">
-              <h3>Claude</h3>
-              <span class="badge writers">للكتاب والمبرمجين</span>
-            </div>
-            <p class="summary">مميز في الكتابة الطبيعية وتحليل الوثائق الطويلة والبرمجة المعقدة مع التزام قوي بالتعليمات الطويلة.</p>
-            <div class="list-block">
-              <h4>نقاط القوة</h4>
-              <ul>
-                <li>أفضل كتابة طبيعية بين الجميع</li>
-                <li>ممتاز في تحليل العقود والوثائق الطويلة</li>
-                <li>قوي جداً في البرمجة المعقدة</li>
-              </ul>
-            </div>
-            <div class="list-block">
-              <h4>نقاط الضعف</h4>
-              <ul>
-                <li>أقل إبداعاً من ChatGPT أحياناً</li>
-                <li>قد يرفض بعض الطلبات أكثر من غيره</li>
-                <li>أدواته أقل تنوعاً</li>
-              </ul>
-            </div>
-            <p class="use-case"><strong>استخدمه لـ:</strong> مراجعة العقود، كتابة التقارير، الروايات، مراجعة الأكواد الكبيرة، تحليل مستندات PDF ضخمة.</p>
+          <article class="panel reveal">
+            <p class="section-tag">التعلم بالتجربة</p>
+            <h2>الاحتراف يأتي من التكرار</h2>
+            <ul class="check-list">
+              <li>جرّب أكثر من مطالبة.</li>
+              <li>عدّل في الصياغة والعناصر.</li>
+              <li>قارن النتائج بين الأدوات.</li>
+              <li>كرر المحاولة حتى تصل للصيغة الأفضل.</li>
+            </ul>
           </article>
+        </section>
 
-          <article class="tool-card" data-name="Gemini" data-tags="gmail docs drive google workspace صور فيديو اجتماعات شركات">
-            <div class="card-top">
-              <h3>Gemini</h3>
-              <span class="badge workspace">Google Workspace</span>
+        <section class="section pricing-section panel reveal">
+          <div class="workflow-header">
+            <p class="section-tag">الاستخدام الذكي</p>
+            <h2>متى أستخدم الأدوات المجانية والمدفوعة؟</h2>
+          </div>
+          <div class="dual-cards">
+            <div class="mini-card">
+              <h3>النسخ المجانية</h3>
+              <p>مناسبة للتجربة الأولى، اختبار الفكرة، وفهم سلوك الأداة.</p>
             </div>
-            <p class="summary">اختيار قوي لمن يعمل داخل منظومة Google بفضل التكامل الممتاز مع Gmail وDocs وDrive.</p>
-            <div class="list-block">
-              <h4>نقاط القوة</h4>
-              <ul>
-                <li>تكامل ممتاز مع Gmail وDocs وDrive</li>
-                <li>نافذة سياق ضخمة جداً</li>
-                <li>قوي في الصور والفيديو والبحث داخل ملفات Google Workspace</li>
-              </ul>
+            <div class="mini-card">
+              <h3>النسخ المدفوعة</h3>
+              <p>استخدمها بعد تحسين المطالبة، خاصة في المشاريع النهائية عالية القيمة.</p>
             </div>
-            <div class="list-block">
-              <h4>نقاط الضعف</h4>
-              <ul>
-                <li>أسلوبه أحياناً رسمي وجاف</li>
-                <li>أقل إبداعاً من ChatGPT</li>
-                <li>إجاباته قد تكون محافظة أكثر</li>
-              </ul>
-            </div>
-            <p class="use-case"><strong>استخدمه لـ:</strong> تحليل ملفات Drive، تلخيص الاجتماعات، العمل داخل Gmail، البحث داخل مستندات الشركات.</p>
-          </article>
+          </div>
+        </section>
 
-          <article class="tool-card" data-name="Perplexity AI" data-tags="بحث مراجع مصادر معلومات طلاب باحثين سوق منافسين">
-            <div class="card-top">
-              <h3>Perplexity AI</h3>
-              <span class="badge research">ملك البحث</span>
-            </div>
-            <p class="summary">الأداة الأقوى في الوصول للمعلومات الحديثة مع ذكر المصادر تلقائياً ودعم ممتاز للبحث والتحقق.</p>
-            <div class="list-block">
-              <h4>نقاط القوة</h4>
-              <ul>
-                <li>ممتاز في البحث والمراجع</li>
-                <li>يذكر المصادر تلقائياً</li>
-                <li>سريع في الوصول للمعلومات الحديثة</li>
-              </ul>
-            </div>
-            <div class="list-block">
-              <h4>نقاط الضعف</h4>
-              <ul>
-                <li>ليس الأفضل في الإبداع</li>
-                <li>كتابة المحتوى أقل جودة من Claude وChatGPT</li>
-              </ul>
-            </div>
-            <p class="use-case"><strong>استخدمه لـ:</strong> أبحاث السوق، جمع المصادر، التحقق من المعلومات، تحليل المنافسين.</p>
-          </article>
+        <section class="section future-section reveal">
+          <div class="future-copy">
+            <p class="section-tag">الجلسة القادمة</p>
+            <h2>Higgsfield AI</h2>
+            <p>
+              تم التمهيد لأداة ستُشرح لاحقًا، وتتميز بقدرتها على تحويل الصور إلى
+              فيديو، مزامنة حركة الشفاه مع الصوت، وإنتاج شخصيات ناطقة بشكل
+              واقعي.
+            </p>
+          </div>
+          <div class="future-badges">
+            <span>تحويل صورة إلى فيديو</span>
+            <span>Lip Sync</span>
+            <span>شخصيات تتحدث بواقعية</span>
+          </div>
+        </section>
 
-          <article class="tool-card" data-name="Kimi" data-tags="ملفات ضخمة كتب ابحاث وثائق مشاريع صفحات كثيرة">
-            <div class="card-top">
-              <h3>Kimi</h3>
-              <span class="badge giant">مستندات ضخمة</span>
-            </div>
-            <p class="summary">سلاح قوي عند التعامل مع كميات هائلة من الصفحات والوثائق والأبحاث الطويلة.</p>
-            <div class="list-block">
-              <h4>نقاط القوة</h4>
-              <ul>
-                <li>قراءة ملفات ضخمة جداً</li>
-                <li>نافذة سياق عملاقة</li>
-                <li>جيد في تلخيص الكتب والأبحاث</li>
-              </ul>
-            </div>
-            <div class="list-block">
-              <h4>نقاط الضعف</h4>
-              <ul>
-                <li>أقل شهرة وانتشاراً</li>
-                <li>أدواته ما زالت أقل نضجاً</li>
-              </ul>
-            </div>
-            <p class="use-case"><strong>استخدمه لـ:</strong> تحليل آلاف الصفحات، قراءة وثائق المشاريع، مراجعة أبحاث كبيرة.</p>
-          </article>
+        <section class="section takeaways-section" id="takeaways">
+          <div class="takeaways-header reveal">
+            <p class="section-tag">أهم الرسائل المستفادة</p>
+            <h2>الخلاصة العملية السريعة</h2>
+          </div>
+          <div class="takeaways-grid">
+            <article class="takeaway reveal">
+              <h3>لا تعتمد على أداة واحدة</h3>
+              <p>وزّع المهام حسب قوة كل أداة بدلًا من البحث عن حل واحد لكل شيء.</p>
+            </article>
+            <article class="takeaway reveal">
+              <h3>ChatGPT للإبداع والتنظيم</h3>
+              <p>ممتاز للمحتوى، إدارة المشاريع، والتحسين الذكي للمطالبات.</p>
+            </article>
+            <article class="takeaway reveal">
+              <h3>Claude للبرمجة والوثائق</h3>
+              <p>يتألق عند التعامل مع الأكواد والملفات الطويلة والمواد التقنية.</p>
+            </article>
+            <article class="takeaway reveal">
+              <h3>الجودة تبدأ من المطالبة</h3>
+              <p>كلما كانت المطالبة أوضح، كانت النتيجة أقرب لما تريده بالفعل.</p>
+            </article>
+            <article class="takeaway reveal">
+              <h3>التجربة جزء من التعلم</h3>
+              <p>التكرار والمقارنة والتعديل هي الطريق الطبيعي للاحتراف.</p>
+            </article>
+            <article class="takeaway reveal">
+              <h3>راجع المعلومات الحساسة</h3>
+              <p>خصوصًا عند تحليل ملفات كبيرة أو اتخاذ قرارات مهمة بناءً على المخرجات.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
 
-          <article class="tool-card" data-name="Grok" data-tags="اخبار ترند x سوشال ميديا محتوى سريع احداث جارية">
-            <div class="card-top">
-              <h3>Grok</h3>
-              <span class="badge trends">للأخبار والترند</span>
-            </div>
-            <p class="summary">مناسب لمتابعة الأحداث الجارية وتحليل الترندات والمحتوى السريع بفضل ارتباطه بمحتوى X.</p>
-            <div class="list-block">
-              <h4>نقاط القوة</h4>
-              <ul>
-                <li>متصل مباشرة بمحتوى X</li>
-                <li>ممتاز للأحداث الجارية والترندات</li>
-                <li>إجاباته أقل رسمية ومحادثته سريعة</li>
-              </ul>
-            </div>
-            <div class="list-block">
-              <h4>نقاط الضعف</h4>
-              <ul>
-                <li>دقته متذبذبة أحياناً</li>
-                <li>ليس الأفضل للوثائق الطويلة</li>
-                <li>نتائج متباينة في بعض تقييمات السلامة والدقة</li>
-              </ul>
-            </div>
-            <p class="use-case"><strong>استخدمه لـ:</strong> متابعة الأخبار، تحليل الترند، السوشال ميديا، المحتوى السريع.</p>
-          </article>
-
-          <article class="tool-card" data-name="DeepSeek" data-tags="برمجة تعلم مشاريع شخصية سعر منخفض استدلال">
-            <div class="card-top">
-              <h3>DeepSeek</h3>
-              <span class="badge value">قيمة مقابل السعر</span>
-            </div>
-            <p class="summary">خيار اقتصادي قوي للبرمجة والتعلم والمشاريع الشخصية مع استدلال جيد جداً.</p>
-            <div class="list-block">
-              <h4>نقاط القوة</h4>
-              <ul>
-                <li>قيمة مذهلة مقابل السعر</li>
-                <li>قوي في البرمجة</li>
-                <li>استدلال جيد جداً وتكلفة منخفضة</li>
-              </ul>
-            </div>
-            <div class="list-block">
-              <h4>نقاط الضعف</h4>
-              <ul>
-                <li>أدوات أقل</li>
-                <li>بعض القيود السياسية</li>
-                <li>تجربة المستخدم أقل نضجاً</li>
-              </ul>
-            </div>
-            <p class="use-case"><strong>استخدمه لـ:</strong> البرمجة، التعلم، المشاريع الشخصية.</p>
-          </article>
-
-          <article class="tool-card" data-name="Microsoft Copilot" data-tags="word excel powerpoint outlook شركات microsoft 365 تقارير">
-            <div class="card-top">
-              <h3>Microsoft Copilot</h3>
-              <span class="badge enterprise">للشركات</span>
-            </div>
-            <p class="summary">أفضل عندما تكون بيئة العمل الأساسية هي Microsoft 365 وخاصة Word وExcel وPowerPoint وOutlook.</p>
-            <div class="list-block">
-              <h4>نقاط القوة</h4>
-              <ul>
-                <li>موجود داخل Word وExcel وPowerPoint</li>
-                <li>ممتاز للشركات</li>
-                <li>تكامل Microsoft 365 قوي جداً</li>
-              </ul>
-            </div>
-            <div class="list-block">
-              <h4>نقاط الضعف</h4>
-              <ul>
-                <li>أقل مرونة من ChatGPT</li>
-                <li>أفضلية واضحة فقط لمستخدمي Microsoft</li>
-              </ul>
-            </div>
-            <p class="use-case"><strong>استخدمه لـ:</strong> الشركات، التقارير، Excel، Outlook.</p>
-          </article>
-
-          <article class="tool-card" data-name="Qwen" data-tags="برمجة لغات متعددة نماذج مفتوحة الصين الاردن">
-            <div class="card-top">
-              <h3>Qwen</h3>
-              <span class="badge code">متعدد اللغات</span>
-            </div>
-            <p class="summary">أداة قوية في البرمجة واللغات المتعددة مع نماذج مفتوحة قوية، لكن انتشارها العالمي أقل.</p>
-            <div class="list-block">
-              <h4>نقاط القوة</h4>
-              <ul>
-                <li>قوي جداً في البرمجة</li>
-                <li>ممتاز للغات متعددة</li>
-                <li>نماذج مفتوحة قوية</li>
-              </ul>
-            </div>
-            <div class="list-block">
-              <h4>نقاط الضعف</h4>
-              <ul>
-                <li>انتشار عالمي أقل</li>
-                <li>بعض القيود المرتبطة بالسوق الصيني</li>
-                <li>مغلق في الأردن حالياً بحسب المستند</li>
-              </ul>
-            </div>
-            <p class="use-case"><strong>ملاحظة من المستند:</strong> ذُكر أنه مغلق في الأردن حالياً (عام 2026).</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="comparison-section" id="comparison">
-        <div class="section-heading">
-          <p class="eyebrow">مقارنة سريعة</p>
-          <h2>أي أداة تناسب أي نوع من العمل؟</h2>
-        </div>
-
-        <div class="comparison-table-wrap">
-          <table class="comparison-table">
-            <thead>
-              <tr>
-                <th>الأداة</th>
-                <th>الأفضل فيها</th>
-                <th>مناسبة لـ</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>ChatGPT</td><td>التوازن العام والإبداع والأدوات</td><td>المهام اليومية، التخطيط، المحتوى، الأعمال</td></tr>
-              <tr><td>Claude</td><td>الكتابة الطبيعية والوثائق الطويلة</td><td>العقود، التقارير، الأكواد الكبيرة</td></tr>
-              <tr><td>Gemini</td><td>التكامل مع Google Workspace</td><td>Gmail، Drive، Docs، الاجتماعات</td></tr>
-              <tr><td>Perplexity</td><td>البحث والمراجع</td><td>الطلاب، الباحثون، أبحاث السوق</td></tr>
-              <tr><td>Kimi</td><td>قراءة ملفات ضخمة</td><td>الكتب، الأبحاث، وثائق المشاريع</td></tr>
-              <tr><td>Grok</td><td>الأخبار والترندات</td><td>السوشال ميديا، الأحداث الجارية</td></tr>
-              <tr><td>DeepSeek</td><td>السعر مقابل الأداء</td><td>البرمجة، التعلم، المشاريع الشخصية</td></tr>
-              <tr><td>Microsoft Copilot</td><td>بيئة Microsoft 365</td><td>الشركات، Excel، Outlook</td></tr>
-              <tr><td>Qwen</td><td>البرمجة وتعدد اللغات</td><td>المطورون ومتعددو اللغات</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="document-section" id="document-summary">
-        <div class="section-heading">
-          <p class="eyebrow">ملخص المستند</p>
-          <h2>ماذا يحتوي الملف المرفق؟</h2>
-        </div>
-
-        <div class="doc-grid">
-          <article class="doc-card">
-            <h3>الأدوات المذكورة</h3>
-            <p>ChatGPT، Claude، Gemini، Perplexity AI، Kimi، Grok، DeepSeek، Microsoft Copilot، Qwen.</p>
-          </article>
-          <article class="doc-card">
-            <h3>نوع المعلومات</h3>
-            <p>لكل أداة: نقاط القوة، نقاط الضعف، وأفضل الاستخدامات العملية.</p>
-          </article>
-          <article class="doc-card">
-            <h3>الخلاصة العامة</h3>
-            <p>المستند يوضح أن كل أداة تتميز في مجال معين، مع اعتبار ChatGPT الأفضل كخيار شامل، وPerplexity الأفضل للبحث، وClaude للكتابة الطبيعية والوثائق.</p>
-          </article>
-        </div>
-      </section>
-    </main>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+    <button class="back-to-top" type="button" aria-label="العودة إلى الأعلى">↑</button>
+    <script src="script.js"></script>
+  </body>
 </html>
