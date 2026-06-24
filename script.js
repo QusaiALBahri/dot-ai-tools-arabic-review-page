@@ -1,30 +1,33 @@
-const searchInput = document.getElementById("toolSearch");
-const cards = Array.from(document.querySelectorAll(".tool-card"));
-const resultsCount = document.getElementById("resultsCount");
+const reveals = document.querySelectorAll(".reveal");
+const backToTop = document.querySelector(".back-to-top");
 
-function updateResults(query) {
-  const normalized = query.trim().toLowerCase();
-  let visibleCount = 0;
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.16,
+  }
+);
 
-  cards.forEach((card) => {
-    const name = (card.dataset.name || "").toLowerCase();
-    const tags = (card.dataset.tags || "").toLowerCase();
-    const content = card.textContent.toLowerCase();
-    const matches =
-      normalized === "" ||
-      name.includes(normalized) ||
-      tags.includes(normalized) ||
-      content.includes(normalized);
+reveals.forEach((item) => revealObserver.observe(item));
 
-    card.classList.toggle("is-hidden", !matches);
-    if (matches) visibleCount += 1;
-  });
-
-  resultsCount.textContent = `${visibleCount} أدوات ظاهرة`;
-}
-
-searchInput.addEventListener("input", (event) => {
-  updateResults(event.target.value);
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 480) {
+    backToTop.classList.add("show");
+  } else {
+    backToTop.classList.remove("show");
+  }
 });
 
-updateResults("");
+backToTop.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
