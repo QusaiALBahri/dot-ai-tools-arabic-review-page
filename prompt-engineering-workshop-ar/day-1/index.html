@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اليوم الأول | Prompt Engineering</title>
+    <style>
+      @font-face {
+        font-family: "Thmanyah Sans";
+        src: url("https://framerusercontent.com/assets/Ej0k3h4Mi5O7TSo2w2JaDCPRgvo.woff2") format("woff2");
+        font-display: swap;
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Thmanyah Sans";
+        src: url("https://framerusercontent.com/assets/JUv6rms2ye2kYL3UI3O9YyExQcQ.woff2") format("woff2");
+        font-display: swap;
+        font-weight: 700;
+      }
+      @font-face {
+        font-family: "Thmanyah Serif";
+        src: url("https://framerusercontent.com/assets/gUSrlMNsoOIspcnYhQl24uNZZo.woff2") format("woff2");
+        font-display: swap;
+        font-weight: 400;
+      }
+      body {
+        margin: 0;
+        font-family: "Thmanyah Sans", sans-serif;
+        background:
+          radial-gradient(circle at top right, rgba(139, 200, 162, 0.26), transparent 22%),
+          linear-gradient(180deg, #f7fbf8 0%, #edf6ef 100%);
+        color: #173126;
+        min-height: 100vh;
+      }
+      .wrap {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 28px 18px 56px;
+      }
+      .hero,
+      .card,
+      .link {
+        background: rgba(255, 255, 255, 0.84);
+        border: 1px solid rgba(255,255,255,0.88);
+        box-shadow: 0 22px 56px rgba(32, 70, 50, 0.12);
+        border-radius: 28px;
+      }
+      .hero {
+        padding: 28px;
+        margin-bottom: 20px;
+      }
+      h1, h2, h3 {
+        font-family: "Thmanyah Serif", "Thmanyah Sans", serif;
+        margin-top: 0;
+      }
+      h1 {
+        font-size: clamp(2rem, 6vw, 4rem);
+        line-height: 1.15;
+        margin-bottom: 14px;
+      }
+      p {
+        line-height: 1.95;
+        color: #587062;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+      .card {
+        padding: 24px;
+      }
+      .links {
+        display: grid;
+        gap: 12px;
+        margin-top: 18px;
+      }
+      .link {
+        display: block;
+        text-decoration: none;
+        color: #1d5f43;
+        padding: 16px 18px;
+        font-weight: 700;
+      }
+      .badge {
+        display: inline-block;
+        background: rgba(47, 143, 98, 0.1);
+        color: #1d5f43;
+        padding: 8px 12px;
+        border-radius: 999px;
+        margin-bottom: 12px;
+        font-weight: 700;
+      }
+      ul {
+        padding-right: 18px;
+        line-height: 1.9;
+      }
+      @media (max-width: 780px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="hero">
+        <span class="badge">Day 1</span>
+        <h1>Prompt Engineering</h1>
+        <p>
+          هذه صفحة اليوم الأول. ستجد هنا كل المواد التي أنجزناها اليوم:
+          مادة العرض، دليل المدرب، التمارين النصية، أوراق العمل المطبوعة،
+          وروقة متابعة التقدم للطالب.
+        </p>
+        <div class="links">
+          <a class="link" href="printable-worksheets.html">أوراق العمل القابلة للطباعة</a>
+          <a class="link" href="student-progress-checklist.html">ورقة متابعة التقدم</a>
+          <a class="link" href="activities-and-worksheets.md">التمارين النصية</a>
+          <a class="link" href="trainer-guide.md">دليل المدرب</a>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h2>ماذا يتضمن اليوم الأول؟</h2>
+          <ul>
+            <li>تعريف Prompt Engineering بوصفه Task Design</li>
+            <li>المفاهيم الأساسية: Zero-shot, Few-shot, Role Prompting</li>
+            <li>Structured Output, Grounding, Self-Critique</li>
+            <li>Case Studies قبل/بعد</li>
+            <li>Prompt Evaluation Framework</li>
+            <li>Prompt Injection Mini Case</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>الملفات المتاحة</h2>
+          <ul>
+            <li><strong>README.md</strong> وصف مختصر للحزمة</li>
+            <li><strong>cheat-sheet.md</strong> بطاقة سريعة</li>
+            <li><strong>tools-and-links.md</strong> روابط وأدوات مساندة</li>
+            <li><strong>styles.css</strong> التنسيق البصري</li>
+            <li><strong>script.js</strong> التفاعلات الخفيفة</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
